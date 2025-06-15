@@ -181,12 +181,50 @@
           <a href="https://www.linkedin.com/in/meeru088/" target="_blank">LinkedIn Profile</a>
         </p>
       </div>
-      <form class="contact-form" action="mailto:meeruchp088@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mkgbbzer" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+
+  <!-- Honeypot field -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit">Send Message</button>
+</form>
+
+<!-- Thank You Message (hidden by default) -->
+<p id="thankYouMessage" style="display:none; margin-top: 20px; color: #21d4fd; font-weight: bold;">
+  ✅ Thank you! Your message has been sent successfully.
+</p>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const thankYou = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        thankYou.style.display = 'block';
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    } catch (error) {
+      alert('Network error. Please try again later.');
+    }
+  });
+</script>
+
     </div>
   </section>
 

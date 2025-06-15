@@ -234,31 +234,59 @@ a:hover {
   flex-direction: column;
   gap: 18px;
 }
-.contact-form input, .contact-form textarea {
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #2d2f4b;
+  background: #1e2233;
+  color: #f5f5f7;
   font-size: 1rem;
-  background: #232645;
-  color: #fff;
-  resize: none;
-}
-.contact-form button {
-  background: #21d4fd;
-  color: #161a2f;
-  font-weight: bold;
-  border: none;
-  padding: 14px 0;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.contact-form button:hover {
-  background: #2196fd;
+  transition: all 0.3s ease;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #21d4fd;
+  outline: none;
+  box-shadow: 0 0 8px rgba(33, 212, 253, 0.3);
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: linear-gradient(to right, #21d4fd, #1bcdfd);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to right, #1bcdfd, #21d4fd);
+}
+
+/* Optional Thank You message styling */
+#thankYouMessage {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #21d4fd;
+  font-weight: bold;
+  background: #232645;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(33,212,253,0.05);
+}
 /* Footer */
 footer {
   background: #181e2b;
