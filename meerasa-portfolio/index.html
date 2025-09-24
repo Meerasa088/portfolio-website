@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meerasa Shaik | Python Developer & GenAI Enthusiast</title>
+  <title>Meerasa Shaik | Python GenAI Developer </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,14 +18,11 @@
     <div class="blob blob1"></div>
     <div class="blob blob2"></div>
     <div class="blob blob3"></div>
-    <!-- Glassy laptop watermark -->
-    <div class="laptop-watermark">
-      <i class="fa-solid fa-laptop-code"></i>
-    </div>
+
   </div>
   <div class="hero-content">
     <h1>Meerasa Shaik</h1>
-    <h2>Python Developer & GenAI Enthusiast</h2>
+    <h2>Python GenAI Developer</h2>
     <a href="Meerasa_Python_Developer.docx" class="cv-btn" download>
       <i class="fa-solid fa-download"></i> Download CV
     </a>
@@ -102,19 +99,23 @@
       <ul class="cert-list">
         <li>
           <i class="fa-solid fa-certificate"></i>
-          AWS Certified Cloud Practitioner <span>(AWS)</span>
+          Introduction to Generative AI<span>(Google)</span>
         </li>
         <li>
           <i class="fa-solid fa-certificate"></i>
-          Academy Accreditation: Generative AI Fundamentals <span>(Databricks)</span>
+          	Google AI Essentials <span>(Google)</span>
         </li>
         <li>
           <i class="fa-solid fa-certificate"></i>
-          Introduction to Generative AI <span>(Google)</span>
+          	Academy Accreditation: Generative AI Fundamentals <span>(Databricks)</span>
         </li>
         <li>
           <i class="fa-solid fa-certificate"></i>
-          Generative AI Masterminds INTL <span>(Outskill)</span>
+          Generative AI Masterminds INTL  <span>(Outskill)</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-certificate"></i>
+          AWS Certified Cloud Practitioner CLF-C02  <span>(AWS)</span>
         </li>
       </ul>
     </div>
@@ -122,44 +123,54 @@
 
   <!-- ===== PROJECTS / WORKS ===== -->
   <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <!-- Projects from Resume -->
-        <div class="project-card">
-          <h4>API Automation for Analytics</h4>
-          <p>Created secure serverless APIs for ingesting and validating enterprise data, improving reporting efficiency.</p>
-          <div class="tags">AWS, API Gateway, Lambda, Python</div>
-        </div>
-        <div class="project-card">
-          <h4>Real-Time Streaming Analytics</h4>
-          <p>Built dashboards using Spark and Kafka to monitor KPIs in real time for business stakeholders.</p>
-          <div class="tags">Python, Spark, Kafka, Dashboard</div>
-        </div>
-        <div class="project-card">
-          <h4>PDF-to-Text AI Extractor</h4>
-          <p>Automated extraction and parsing of text from legal documents using PyPDF2 and NLP, saving hours of manual work.</p>
-          <div class="tags">PyPDF2, NLP, Python</div>
-        </div>
-        <div class="project-card">
-          <h4>Data Engineering with AWS</h4>
-          <p>Developed and optimized scalable ETL pipelines using AWS Glue, Lambda, and S3, reducing data latency for financial analytics.</p>
-          <div class="tags">AWS, Lambda, Glue, S3, Python</div>
-        </div>
-        <!-- GenAI Chatbot - Single PDF -->
-        <div class="project-card">
-          <h4>GenAI PDF Chatbot (Single PDF)</h4>
-          <p>Upload any PDF and get instant, AI-powered answers. Python + Streamlit + LangChain + OpenAI.</p>
-          <div class="tags">Python, LangChain, Streamlit, OpenAI, PyPDF2</div>
-        </div>
-        <!-- GenAI Chatbot - Multi PDF -->
-        <div class="project-card">
-          <h4>GenAI PDF Chatbot (Multi PDF)</h4>
-          <p>Ask questions across multiple PDFs with a single chatbot. Semantic search with FAISS, OpenAI, LangChain.</p>
-          <div class="tags">Python, LangChain, Streamlit, OpenAI, FAISS</div>
-        </div>
-      </div>
-    </div>
+   <div class="projects-container-vertical">
+
+  <!-- Project 1 -->
+     <h2>Projects</h2>
+  <div class="project-box">
+    <h4>1.Personal AI Assistant with Multi-Modal Capabilities</h4>
+    <ul>
+      <li>Developed a Personal AI Assistant integrating Gmail summarization, coding help, and Q&A into one interface.</li>
+      <li>Enabled multi-document Q&A by extracting and processing information from multiple PDFs in real time.</li>
+      <li>Enhanced user experience with real-time weather updates, secure email handling, and context-aware responses.</li>
+    </ul>
+    <p>Python, LangChain, FAISS, OpenAI, Streamlit</p>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-box">
+    <h4>2.Multimodal Retrieval-Augmented Generation (RAG) System</h4>
+    <ul>
+      <li>Developed a Multimodal RAG system that retrieves answers from documents and images.</li>
+      <li>Built scalable pipelines for text extraction, preprocessing, and semantic search with FAISS and Hugging Face.</li>
+      <li>Delivered a self-contained Colab notebook showcasing modular, enterprise-ready use cases.</li>
+    </ul>
+    <p>Python, Hugging Face, FAISS, LangChain, OCR, NLTK</p>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-box">
+    <h4>3.Real-Time Fraud Detection Platform </h4>
+    <ul>
+      <li>Developed scalable RESTful APIs and microservices using Django, FastAPI, and AWS for fraud detection workflows.</li>
+      <li>Optimized pipelines with PostgreSQL, Redis, and Kafka for real-time transaction processing.</li>
+      <li>Automated CI/CD workflows and deployed services on Kubernetes (EKS) with Prometheus & Grafana monitoring.</li>
+    </ul>
+    <p>Python, Django, FastAPI, PostgreSQL, Redis, Kafka, AWS, Docker, Kubernetes, Jenkins, GitHub, Prometheus, Grafana</p>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project-box">
+    <h4>4.Enterprise API Development </h4>
+    <ul>
+      <li>Developed secure RESTful APIs with Flask and SQLAlchemy for authentication and payment workflows.</li>
+      <li>Containerized applications with Docker and deployed on AWS EC2/ECS for high availability.</li>
+      <li>Implemented JWT-based authentication, Redis caching, Celery task queues, and CI/CD pipelines.</li>
+    </ul>
+    <p>Python, Flask, SQLAlchemy, JWT, Redis, Celery, Docker, AWS (EC2, ECS), GitHub Actions</p>
+  </div>
+
+</div>
   </section>
 
   <!-- ===== CONTACT ===== -->
